@@ -1,3 +1,59 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$green: #C7FE07;
+$orange: #FF7415;
+$blue: #2C76FE;
+$gold: #FFAD15;
+
+body {
+  background: $blue;
+  color: black;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+header {
+  background: $gold;
+  color: $blue;
+  line-height: 1;
+  padding: 10px 20px;
+
+  a {
+    color: $blue;
+  }
+
+  h2 {
+    display: inline-block;
+    margin: 0px;
+    padding: 1px 0px 1px 0px;
+    text-shadow: 2px 2px #90b7ff;
+  }
+
+  .button {
+    background: $blue;
+    border-radius: 5px;
+    color: $orange;
+    float: right;
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover { 
+    text-decoration: underline;
+  }
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
